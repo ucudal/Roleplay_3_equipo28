@@ -24,24 +24,16 @@ namespace Test.Library
 
 
         } */
-
+/*
         [Test]
         public void TestArco()
         {
             Arco arco = new Arco();
             Assert.AreEqual("Arco", arco.Nombre);
             Assert.AreEqual(80, arco.Daño);
-        }
+        }*/
 
-        [Test]
-        public void PersonajeTest()
-        {
-            Personaje personaje = new Personaje();
-            personaje.Vida = 100;
-            Assert.True(personaje.Vivo());
-            personaje.Vida = -1;
-            Assert.False(personaje.Vivo());
-        }
+        
         
     }
 }

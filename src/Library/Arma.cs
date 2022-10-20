@@ -12,9 +12,4 @@ public class Arma
 
     public string Nombre { get; set; }
 
-/*     public void Equipar(Personaje personaje)
-    {
-
-    } */
-
 }
