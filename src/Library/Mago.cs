@@ -1,4 +1,4 @@
-﻿namespace Library;
+﻿/* namespace Library;
 using System;
 using System.Collections.Generic;
 
@@ -19,3 +19,4 @@ public class Mago : Personaje
     public void Atacar( int daño, int vida, int defensa )
 
 }
+ */

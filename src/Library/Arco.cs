@@ -1,11 +1,8 @@
 namespace Library;
 
-public class Arco : Armas
+public class Arco : Arma
 {
-    public Arco()
+    public Arco() : base("Arco", 80)
     {   
-        this.Daño = 80;
     }
-    public int Daño { get; }
-    
 }

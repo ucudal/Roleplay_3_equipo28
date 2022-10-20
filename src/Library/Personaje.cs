@@ -1,4 +1,4 @@
-﻿namespace Library;
+﻿/* namespace Library;
 
 public interface Personaje
 {
@@ -6,7 +6,7 @@ public interface Personaje
     {
         private string Nombre { get; }
 
-        Armas Arma { get; set; }
+        Arma Arma { get; set; }
 
         Armaduras Armadura { get; set; }
 
@@ -20,3 +20,4 @@ public interface Personaje
         }
     }
 }
+ */

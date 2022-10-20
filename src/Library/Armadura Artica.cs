@@ -1,11 +1,8 @@
 namespace Library;
 
-public class Armadura_artica : Armas
+public class Armadura_artica : Arma
 {
-    public Armadura_artica()
+    public Armadura_artica() : base("Armadura artica", 200)
     {   
-        this.Defensa = 200;
     }
-    public int Defensa { get; }
-    
 }

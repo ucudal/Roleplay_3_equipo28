@@ -1,10 +1,11 @@
 using NUnit.Framework;
+using Library;
 
 namespace Test.Library
 {
    public class TestAlMago
     {
-        [Test]
+/*         [Test]
         public void Comprobaciondelestadodelamgo()
         {
             
@@ -22,6 +23,14 @@ namespace Test.Library
             Assert.AreEqual(mago.Armadura,armadura);
 
 
-        }
+        } */
+
+        [Test]
+        public void TestArco()
+        {
+            Arco arco = new Arco();
+            Assert.AreEqual("Arco", arco.Nombre);
+            Assert.AreEqual(80, arco.Daño);
         }
     }
+}

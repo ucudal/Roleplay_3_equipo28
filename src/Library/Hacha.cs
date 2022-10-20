@@ -1,11 +1,8 @@
 namespace Library;
 
-public class Hacha : Armas
+public class Hacha : Arma
 {
-    public Hacha()
+    public Hacha() : base("Hacha", 140)
     {   
-        this.Daño = 140;
     }
-    public int Daño { get; }
-    
 }

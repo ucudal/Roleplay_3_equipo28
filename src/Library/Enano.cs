@@ -1,8 +1,8 @@
-namespace Library;
+/* namespace Library;
 
 public class Enano : Personaje
 {
-    public Enano(string nombre, Armas arma, Armaduras armadura, int vida, int daño, int defensa)
+    public Enano(string nombre, Arma arma, Armaduras armadura, int vida, int daño, int defensa)
     {
         this.Nombre = nombre;
         this.Arma = arma;
@@ -23,10 +23,10 @@ public class Enano : Personaje
     {
 
     }
-    public void Equipar(Armas arma)
+    public void Equipar(Arma arma)
     {
 
     }
-    public Armas Arma { get; set; }
+    public Arma Arma { get; set; }
     public Armaduras Armadura { get; set; }
-}
+} */

@@ -1,11 +1,11 @@
 namespace Library;
 
-public class Espada : Armas
+public class Espada : Arma
 {
-    public Espada()
+    public Espada() : base("Espada", 100)
     {   
-        this.Daño = 100;
     }
+    
     public int Daño { get; }
     
 }

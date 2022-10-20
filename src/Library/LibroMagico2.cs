@@ -1,4 +1,4 @@
-namespace Library;
+/* namespace Library;
 public class LibroDeMagiaBlanca
 {
     public static List<string> libroMagico = new List<string>()
@@ -19,4 +19,4 @@ public class LibroDeMagiaBlanca
     {
         int vida = 30;
     }
-}
+} */
