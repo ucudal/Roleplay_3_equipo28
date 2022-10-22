@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 namespace Library;
+using System;
 
 public class Personaje
 {

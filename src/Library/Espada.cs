@@ -6,4 +6,6 @@ public class Espada : Arma
     {   
     }
     
+    public int Daño { get; }
+    
 }

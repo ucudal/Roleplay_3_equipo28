@@ -4,17 +4,23 @@ using Library;
 namespace Test.Library
 {
    public class TestAlMago
-    {
-/*         [Test]
-        public void Comprobaciondelestadodelamgo()
+    {       
+        [Test]
+        public void  MagoTesteado()
         {
-            
-            Arma arma= new Arma("Baston del empirio");
-            Armadura armadura = new Armadura("Capa de hojas de abedul");
-            Librodemagia librodemagia = new Librodemagia("Librodemagianegra");
+        Mago newmago = new Mago("Merlin");
+        Mago secondmago = new Mago("Oscurus");
+        Assert.AreEqual(60, newmago.Vida );
+        newmago.Atacar(newmago);
+        Assert.AreEqual(-34, newmago.Vida );
 
-            
-            Personaje mago = new MAgo("Merlin", arma, armadura, librodemagia);
+        LibroDeMagia libroDeMagia = new LibroDeMagia();
+        newmago.EquiparMagia(libroDeMagia);
+        Assert.AreEqual(180, newmago.Daño);
+
+        newmago.Tempestad();
+        Assert.AreEqual(360, newmago.Daño);
+        }
 
             
             string expectedName="Merlin";
@@ -24,16 +30,24 @@ namespace Test.Library
 
 
         } */
-/*
+
         [Test]
         public void TestArco()
         {
             Arco arco = new Arco();
             Assert.AreEqual("Arco", arco.Nombre);
             Assert.AreEqual(80, arco.Daño);
-        }*/
+        }
 
-        
+        [Test]
+        public void PersonajeTest()
+        {
+            Personaje personaje = new Personaje();
+            personaje.Vida = 100;
+            Assert.True(personaje.Vivo());
+            personaje.Vida = -1;
+            Assert.False(personaje.Vivo());
+        }
         
     }
 }
