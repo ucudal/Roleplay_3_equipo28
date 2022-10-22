@@ -1,32 +1,13 @@
-﻿/* namespace Library;
+﻿namespace Library;
 
 public class Elfo : Personaje
 {
-    public Elfo(string nombre, Arma arma, Armaduras armadura, int vida, int daño, int defensa)
-    {
-        this.Nombre = nombre;
-        this.Arma = arma;
-        this.Armadura = armadura;
-        this.Daño = daño;
-        this.Vida = vida;
-        this.Defensa = defensa;
-    }
-    private string Nombre { get; set; }
-    public int Daño { get; set; }
-    public int Vida { get; set; }
-    public int Defensa { get; set; }
-    public void Atacar( int daño, int vida, int defensa )
+    public Elfo(string nombre) : base(nombre, 160, 55, 40)
     {
 
     }
-    public void Curar(int vida)
+    public void Curar(Personaje personaje)
     {
-
+        personaje.Vida *= 1.3;
     }
-    public void Equipar(Arma arma)
-    {
-
-    }
-    public Arma Arma { get; set; }
-    public Armaduras Armadura { get; set; }
-} */
+}
