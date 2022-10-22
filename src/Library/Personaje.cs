@@ -1,19 +1,39 @@
 ﻿namespace Library;
+using System;
+
+
+
 
 public class Personaje
 {
-    private string Nombre { get; }
-
-    Arma Arma { get; set; }
-
-    Armaduras Armadura { get; set; }
-
-    public int Daño { get; set; }
-    public int Vida { get; set; }
-    public int Defensa { get; set; }
-
+    public Personaje(string nombre, int vida, int daño, int defensa)
+    {
+        this.Nombre = nombre;
+        this.Vida = vida;
+        this.Daño = daño;
+        this.Defensa = defensa;
+    }
+    public string Nombre { get; set; }
+    public double Vida { get; set; }
+    public float Daño { get; set; }
+    public double Defensa { get; set; }
     public bool Vivo()
     {
         return Vida > 0;
     }
+    public void EquiparArma(Arma item)
+    {
+        this.Daño += item.Daño;
+    }
+    public void EquiparArmadura(Armadura item)
+    {
+        this.Defensa += item.Defensa;
+    }
+    public  void Atacar(Personaje uno)
+    {
+        float var = (float)(uno.Vida - Math.Round((this.Daño)*(1-(uno.Defensa/500))));
+        uno.Vida = var;
+        
+    }
+    
 }

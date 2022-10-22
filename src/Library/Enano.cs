@@ -1,32 +1,15 @@
-/* namespace Library;
+namespace Library;
 
 public class Enano : Personaje
 {
-    public Enano(string nombre, Arma arma, Armaduras armadura, int vida, int daño, int defensa)
-    {
-        this.Nombre = nombre;
-        this.Arma = arma;
-        this.Armadura = armadura;
-        this.Daño = daño;
-        this.Vida = vida;
-        this.Defensa = defensa;
-    }
-    private string Nombre { get; set; }
-    public int Daño { get; set; }
-    public int Vida { get; set; }
-    public int Defensa { get; set; }
-    public void Atacar( int daño, int vida, int defensa )
+    public Enano(string nombre) : base(nombre, 200, 40, 50)
     {
 
     }
-    public void Curar(int vida)
+    public void Borrachera()
     {
-
+        this.Daño *= 2;
+        this.Vida *= 0.4;
+        this.Defensa*= 0.7;
     }
-    public void Equipar(Arma arma)
-    {
-
-    }
-    public Arma Arma { get; set; }
-    public Armaduras Armadura { get; set; }
-} */
+}
