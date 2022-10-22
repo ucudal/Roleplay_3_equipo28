@@ -19,14 +19,11 @@ public class Personaje
     {
         return Vida > 0;
     }
-    public void EquiparArma(Arma item)
+    public void EquiparItem(Item item)
     {
         this.Daño += item.Daño;
     }
-    public void EquiparArmadura(Armadura item)
-    {
-        this.Defensa += item.Defensa;
-    }
+    
     public void Atacar(Personaje uno)
     {
         float var = (float)(uno.Vida - Math.Round((this.Daño)*(1-(uno.Defensa/500))));

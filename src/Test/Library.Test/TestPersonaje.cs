@@ -15,7 +15,7 @@ namespace Test.Library
             Assert.AreEqual(164, playertwo.Vida);
 
             Hacha hacha = new Hacha();
-            playerone.EquiparArma( hacha );
+            playerone.EquiparItem( hacha );
             Assert.AreEqual(40 + hacha.Daño, playerone.Daño);
 
             playerone.Borrachera();

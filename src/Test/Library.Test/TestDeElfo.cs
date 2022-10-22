@@ -15,7 +15,7 @@ namespace Test.Library
             Assert.AreEqual(160, numbertwo.Vida);
 
             Arco arco = new Arco();
-            numberone.EquiparArma( arco );
+            numberone.EquiparItem( arco );
             Assert.AreEqual(55 + arco.Daño, numberone.Daño);
 
             numberone.Curar(numbertwo);
