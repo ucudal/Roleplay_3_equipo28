@@ -1,8 +1,8 @@
 ﻿namespace Library;
 
-public class Elfo : Personaje
+public class Elfo : Heroe
 {
-    public Elfo(string nombre) : base(nombre, 160, 55, 40)
+    public Elfo(string nombre) : base(nombre, 160, 55, 40, 0)
     {
 
     }

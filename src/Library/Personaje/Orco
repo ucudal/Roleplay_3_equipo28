@@ -1,8 +1,8 @@
 namespace Library;
 
-public class Enano : Heroe
+public class Orco : Enemigo
 {
-    public Enano(string nombre) : base(nombre, 200, 40, 50, 0)
+    public Orco(string nombre) : base(nombre, 200, 40, 50, 0)
     {
 
     }
