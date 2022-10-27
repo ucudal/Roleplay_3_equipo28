@@ -2,13 +2,18 @@ namespace Library;
 
 public class Encounters 
 {
-    public Encounters()
+    
+    public void AddHero(Heroe heroe)
+    {
+        
+    }
+    public void AddEnemy(Enemigo enemy)
     {
 
     }
-
-    public void DoEncounters(Heroe hero, Enemigo enemy)
+    public void DoEncounter(Heroe hero, Enemigo enemy)
     {
+        
         while (hero.Vivo() & enemy.Vivo())
         {
             enemy.Atacar(hero);

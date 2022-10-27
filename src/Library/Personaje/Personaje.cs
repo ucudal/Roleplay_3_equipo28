@@ -4,7 +4,7 @@ using System;
 
 public class Personaje
 {
-    public Personaje(string nombre, int vida, int daño, int defensa)
+    public Personaje(string nombre, int vida, int daño, int defensa, int vp)
     {
         this.Nombre = nombre;
         this.Vida = vida;

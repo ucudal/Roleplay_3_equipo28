@@ -11,10 +11,14 @@ namespace Test.Library
             Encounters encounter = new Encounters();
             Enano Pablo = new Enano("Pablo");
             Orco Fahr = new Orco("Fahr");
-            Assert.AreEqual(Pablo.Vp, 0);
-            encounter.DoEncounters(Pablo, Fahr);
-            Assert.AreEqual(Pablo.Vp, 50);
-            Assert.False(Fahr.Vivo());
+            encounter.AddHero(Pablo);
+            encounter.AddEnemy(Fahr);
+            encounter.DoEncounter();
+            Assert.IsTrue(Pablo.Vida > 0);
+            Assert.IsTrue(Fahr.Vida < 0);
+            Assert.IsTrue(Pablo.Vp == Fahr.Vp);
+
+
         }
     }
 }
