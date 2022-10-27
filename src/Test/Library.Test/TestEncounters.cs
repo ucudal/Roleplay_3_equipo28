@@ -11,9 +11,9 @@ namespace Test.Library
             Encounters encounter = new Encounters();
             Enano Durin = new Enano("Durin");
             Elfo Legolas = new Elfo("Legolas");
-            Mago Gandalf = new Mago("Gandalf");
+            Mago Merlin = new Mago("Merlin");
             Orco Adar = new Orco("Adar");
-            Orco Fahr = new Orco("Fahr");
+            DarkMagician Aegon = new DarkMagician("Aegon");
             Orco Lur = new Orco("Lur");
             Orco Shar = new Orco("Shar");
             Orco Uf = new Orco("Uf");
@@ -24,13 +24,13 @@ namespace Test.Library
             encounter.AddEnemy(Shar);
             encounter.AddEnemy(Uf);
             encounter.AddEnemy(Gor);
-            encounter.AddEnemy(Fahr);
+            encounter.AddEnemy(Aegon);
             encounter.DoEncounter();
             Assert.IsTrue(Durin.Vida <= 0);
             Assert.IsTrue(Durin.Vp == 0);
 
             encounter.AddHero(Legolas);
-            encounter.AddHero(Gandalf);
+            encounter.AddHero(Merlin);
             encounter.AddEnemy(Adar);
             encounter.DoEncounter();
             Assert.IsTrue(Adar.Vida <= 0);
