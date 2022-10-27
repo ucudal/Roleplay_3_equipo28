@@ -18,6 +18,9 @@ namespace Test.Library
             Orco Shar = new Orco("Shar");
             Orco Uf = new Orco("Uf");
             Orco Gor = new Orco("Gor");
+            Barbaro Mel = new Barbaro("Mel");
+            Barbaro Rodrer = new Barbaro("Rodrer");
+            Barbaro Miltin = new Barbaro("Miltin");
             encounter.AddHero(Durin);
             encounter.AddEnemy(Adar);
             encounter.AddEnemy(Lur);
@@ -25,6 +28,9 @@ namespace Test.Library
             encounter.AddEnemy(Uf);
             encounter.AddEnemy(Gor);
             encounter.AddEnemy(Aegon);
+            encounter.AddEnemy(Mel);
+            encounter.AddEnemy(Rodrer);
+            encounter.AddEnemy(Miltin);
             encounter.DoEncounter();
             Assert.IsTrue(Durin.Vida <= 0);
             Assert.IsTrue(Durin.Vp == 0);

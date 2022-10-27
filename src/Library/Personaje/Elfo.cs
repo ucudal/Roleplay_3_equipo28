@@ -6,8 +6,9 @@ public class Elfo : Heroe
     {
 
     }
-    public void Curar(Personaje personaje)
+    public void Curar(Heroe personaje)
     {
         personaje.Vida *= 1.3;
+        personaje.Sanar(personaje.Vida*0.3);
     }
 }

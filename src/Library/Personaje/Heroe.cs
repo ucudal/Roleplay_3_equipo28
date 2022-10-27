@@ -8,7 +8,7 @@ public class Heroe : Personaje
     public int Max_hp { get; set; }
     public int Vp_difference { get; set; }
     public int Vp { get; set; }
-    public void Sanar(int sanacion)
+    public void Sanar(double sanacion)
     {
         this.Vida += sanacion;
         if (this.Vida > this.Max_hp)
