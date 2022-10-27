@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Mago : Heroe
 {
-    public Mago(string nombre) : base(nombre, 60, 100, 30, 0)
+    public Mago(string nombre) : base(nombre, 60, 100, 30, 0, 60, 0)
     {
     }
     public void Tempestad()

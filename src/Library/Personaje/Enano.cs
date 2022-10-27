@@ -2,7 +2,7 @@ namespace Library;
 
 public class Enano : Heroe
 {
-    public Enano(string nombre) : base(nombre, 200, 40, 50, 0)
+    public Enano(string nombre) : base(nombre, 200, 40, 50, 0, 200, 0)
     {
 
     }

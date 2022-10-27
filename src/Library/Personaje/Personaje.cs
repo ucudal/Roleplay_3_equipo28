@@ -30,4 +30,5 @@ public class Personaje
         uno.Vida = var;
         
     }
+    
 }

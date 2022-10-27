@@ -9,14 +9,32 @@ namespace Test.Library
         public void Encounters()
         {
             Encounters encounter = new Encounters();
-            Enano Pablo = new Enano("Pablo");
+            Enano Durin = new Enano("Durin");
+            Elfo Legolas = new Elfo("Legolas");
+            Mago Gandalf = new Mago("Gandalf");
+            Orco Adar = new Orco("Adar");
             Orco Fahr = new Orco("Fahr");
-            encounter.AddHero(Pablo);
+            Orco Lur = new Orco("Lur");
+            Orco Shar = new Orco("Shar");
+            Orco Uf = new Orco("Uf");
+            Orco Gor = new Orco("Gor");
+            encounter.AddHero(Durin);
+            encounter.AddEnemy(Adar);
+            encounter.AddEnemy(Lur);
+            encounter.AddEnemy(Shar);
+            encounter.AddEnemy(Uf);
+            encounter.AddEnemy(Gor);
             encounter.AddEnemy(Fahr);
             encounter.DoEncounter();
-            Assert.IsTrue(Pablo.Vida > 0);
-            Assert.IsTrue(Fahr.Vida < 0);
-            Assert.IsTrue(Pablo.Vp == Fahr.Vp);
+            Assert.IsTrue(Durin.Vida <= 0);
+            Assert.IsTrue(Durin.Vp == 0);
+
+            encounter.AddHero(Legolas);
+            encounter.AddHero(Gandalf);
+            encounter.AddEnemy(Adar);
+            encounter.DoEncounter();
+            Assert.IsTrue(Adar.Vida <= 0);
+            
 
 
         }
